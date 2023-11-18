@@ -1,0 +1,297 @@
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    display: swap;
+}
+
+@font-face {
+    font-family: "Anonymous Pro";
+    src: url(fonts/AnonymousPro-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    display: swap;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #F1F1F1;
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid #A1A6B4;
+    background: white;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 24px 0 24px;
+}
+
+.logo-link {
+    max-width: 215px;
+}
+
+nav {
+    display: flex;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    color: #121723;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.content {
+    margin: 32px 0;
+    max-width: 1140px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.sneakers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    margin: 32px 0 0;
+}
+
+.sneaker {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    max-width: 1140px;
+    height: 100%;
+    border-radius: 12px;
+    background: white;
+    gap: 24px;
+    padding: 48px;
+}
+
+.sneaker-image {
+    width: 100%;
+}
+
+.sneaker-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+    font-family: "Anonymous Pro", sans-serif;
+}
+
+.sneakers__topography {
+    flex: 1 0 0;
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+
+}
+
+.sneaker__text {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.sneaker__about {
+    display: flex;
+    gap: 24px;
+    width: 506px;
+    flex-direction: column;
+
+}
+
+.sneaker__about-title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+hr {
+    background-color: var(--black, #121723);
+    width: 100%;
+}
+
+.sneaker__about-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+h3 {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+
+p {
+    color: var(--black, #121723);
+    font-family: Anonymous Pro;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #121723;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1140px;
+    margin: 32px 0;
+}
+
+.footer__logo-link {
+    max-width: 300px;
+    width: 100%;
+}
+
+footer .nav-link {
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1140px;
+    border-top: 1px solid #A1A6B4;
+}
+
+.copyright-text {
+    color: #A1A6B4;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 24px 0;
+}
+
+@media (width: 375px) {
+    .header-container {
+        display: flex;
+        padding: 24px 16px;
+        flex-direction: column;
+        margin: 0;
+        gap: 24px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    .content {
+        padding: 0px 16px;
+    }
+
+    .sneaker {
+        max-width: 343px;
+    }
+
+    .sneaker-info {
+        gap: 12px;
+    }
+
+    .footer-content {
+        display: flex;
+        padding: 32px 16px 24px;
+        flex-direction: column;
+        margin: 0;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .sneaker {
+        padding: 24px;
+    }
+
+    .sneaker__text {
+        flex-direction: column;
+    }
+
+    .sneakers__topography {
+        color: var(--black, #121723);
+        font-family: Anonymous Pro;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    .sneaker__about {
+        width: 295px;
+    }
+}
